@@ -1,0 +1,23 @@
+import './styles.css';
+
+interface ButtonProps { 
+  name: string,
+  //void - если функция ни чего не возвращает
+  onClick?: ()=>void,
+  disabled?: boolean,
+  type?:'submit' | 'button' | 'reset'
+}
+
+function Button({name, onClick, disabled = false, type = 'submit'}: ButtonProps) {
+  return(
+    <button 
+   className="main-button"
+   onclick={onClick} 
+   disabled={disabled}
+   >
+    {name}
+    </button>
+  )
+}
+
+export default Button
