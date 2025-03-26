@@ -1,8 +1,9 @@
 import { v4 } from "uuid";
 
-import AnimalCard from "../../components/AnimalCard/AnimalCard";
+
 import { animalData } from "./data";
 import './styles.css';
+import AnimalCard from "../../../components/AnimalCard/AnimalCard";
 
 function Lesson07() {
   const animalCards = animalData.map((animal) => {
