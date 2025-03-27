@@ -1,4 +1,5 @@
 import './styles.css';
+ homework07
 import { InputProps } from './types';
 
 function Input({
@@ -24,6 +25,11 @@ function Input({
       />
     </div>
   )
+
+
+function Input() { 
+    return <input className="input-component" name="test" placeholder="Enter text" />
+ main
 }
 
 export default Input;
