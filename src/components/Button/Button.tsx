@@ -1,7 +1,32 @@
+ homework07
+import './styles.css';
+import { ButtonProps } from './types';
+
+// interface ButtonProps {
+//   name: string,
+//   //void - если функция ничего не возвращает
+//   onClick?: () => void,
+//   disabled?: boolean,
+//   type?: 'submit' | 'button' | 'reset'
+// }
+
+function Button({ name, onClick, disabled = false, type = 'submit' }: ButtonProps) {
+  return (
+    <button
+      className="main-button"
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
+    >
+      {name}
+    </button>
+  )
+
 import './style.css';
 
 function Button () { 
     return <button className="main-button">Send</button>
+main
 }
 
 export default Button

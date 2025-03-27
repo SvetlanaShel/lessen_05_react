@@ -7,8 +7,16 @@ function Lesson06() {
   console.log(getAction(TRAFFIC_LIGHT.GREEN));
   
 
+ homework07
+  return <Button name={""} />
+}
+
+//Экспорт по умолчанию для компонента Lesson06
+export default Lesson06;
+
   return <Button />
 }
 
 //Экспорт по умолчанию для компонента Lesson06
 export default Lesson06;
+ main
