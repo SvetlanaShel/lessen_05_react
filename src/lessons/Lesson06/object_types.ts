@@ -118,6 +118,10 @@ export const getAction = (light: TRAFFIC_LIGHT) => {
     case TRAFFIC_LIGHT.GREEN:
       return 'Можно идти';
   }
+homework07
 }
 
 console.log(getAction(TRAFFIC_LIGHT.YELLOW))
+
+}
+ main

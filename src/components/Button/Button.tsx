@@ -1,3 +1,4 @@
+ homework07
 import './styles.css';
 import { ButtonProps } from './types';
 
@@ -20,6 +21,12 @@ function Button({ name, onClick, disabled = false, type = 'submit' }: ButtonProp
       {name}
     </button>
   )
+
+import './style.css';
+
+function Button () { 
+    return <button className="main-button">Send</button>
+main
 }
 
 export default Button

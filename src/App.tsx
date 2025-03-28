@@ -1,3 +1,4 @@
+ 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
 // при импорте по умолчанию можно использовать другое названия для компонента
@@ -15,10 +16,12 @@
 //Consultations imports
 //import Consultation04 from "./consultations/Consultation04/Consultation04"
 
+
 function App() {
 
   return (
     <>
+      homework07
       {/* <Task6 /> */}
       {/* <Lesson06 /> */}
       {/* <Homework06 /> */}
@@ -29,6 +32,6 @@ function App() {
       <Homework08/>
     </>
   )
-}
+};
 
-export default App
+export default App;
