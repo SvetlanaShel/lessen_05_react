@@ -1,7 +1,13 @@
+import { ProductProps } from "./types";
+import './styles.css'
 
-interface Product {
-   name: string;
-   price: number; 
-  };
-  
-  export default Product;
+function Product({ productName, productPrice }: ProductProps) {
+  return (
+    <div className="product-container">
+      <div>Product: {productName}</div>
+      <div>Price: {productPrice}</div>
+    </div>
+  )
+}
+
+export default Product;
