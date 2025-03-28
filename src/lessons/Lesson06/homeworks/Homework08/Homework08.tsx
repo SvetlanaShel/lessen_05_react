@@ -14,6 +14,10 @@ const onChangePassword = (event: ChangeEvent<HTMLInputElement>) => {
     setPassword(event.target.value)
 }
 
+const displayedPasswordHandler = () => {
+    setDisplayedPassword(!displeyedPassword)
+  }
+
     return (
         <div className="homework08-container">
             <h2>Change password</h2>
@@ -24,10 +28,10 @@ const onChangePassword = (event: ChangeEvent<HTMLInputElement>) => {
                 value={password}
                 onChange={onChangePassword} 
              />
-             <Button name="SHOW PASSWORD" />
+             <Button name="SHOW PASSWORD" onClick={displayedPasswordHandler}/>
              {displeyedPassword && <div>{password}</div>}
         </div>
-    )
-}
+    );
+};
 
 export default Homework08;
