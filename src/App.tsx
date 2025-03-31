@@ -7,7 +7,7 @@
 // import Lesson07 from "./lessons/Lesson07/Lesson07";
 //import Lesson08 from "./lessons/Lesson08/Lesson08";
   //import Homework08 from "./lessons/Lesson06/homeworks/Homework08/Homework08"
-import Lesson09 from "./lessons/Lesson09/Lesson09";
+//import Lesson09 from "./lessons/Lesson09/Lesson09";
 
 //Homeworks imports
 // import Homework06 from "./homeworks/Homework06/Homework06"
@@ -15,7 +15,7 @@ import Lesson09 from "./lessons/Lesson09/Lesson09";
 
 //Consultations imports
 //import Consultation04 from "./consultations/Consultation04/Consultation04"
-
+ import Homework09 from "./lessons/Lesson06/homeworks/Homework09/Homework09"
 
 function App() {
 
@@ -30,7 +30,8 @@ function App() {
       {/* <Lesson08/> */}
       {/*<Consultation04 />*/}
       {/*<Homework08/>*/}
-        <Lesson09 />
+       {/*<Lesson09 />*/}
+       <Homework09 />
     </>
   )
 };
