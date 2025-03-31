@@ -1,4 +1,5 @@
- 
+ import GlobalStyles from "./styles/GlobalStyles";
+
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
 // при импорте по умолчанию можно использовать другое названия для компонента
@@ -15,13 +16,14 @@
 
 //Consultations imports
 //import Consultation04 from "./consultations/Consultation04/Consultation04"
- import Homework09 from "./lessons/Lesson06/homeworks/Homework09/Homework09"
+ //import Homework09 from "./lessons/Lesson06/homeworks/Homework09/Homework09"
+import Lesson10Container from "./lessons/Lesson10/Lesson10";
 
 function App() {
 
   return (
     <>
-      
+      <GlobalStyles />
       {/* <Task6 /> */}
       {/* <Lesson06 /> */}
       {/* <Homework06 /> */}
@@ -31,7 +33,8 @@ function App() {
       {/*<Consultation04 />*/}
       {/*<Homework08/>*/}
        {/*<Lesson09 />*/}
-       <Homework09 />
+       {/*<Homework09 />*/}
+       <Lesson10Container/>
     </>
   )
 };

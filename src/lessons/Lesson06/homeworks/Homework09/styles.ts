@@ -1,48 +1,37 @@
-
 import styled from "@emotion/styled";
 
-interface VipCardInfoStyledProps {
-    primary?: boolean
- }
+interface ProfileCardStyledProps {
+  vip?: boolean
+}
 
- export const VipCardStyle = styled.div<VipCardInfoStyledProps>`
+export const Homework09Container = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+  padding: 60px;
+  background-color: rgb(188, 219, 219);
+`;
+
+export const ProfileCard = styled.div<ProfileCardStyledProps>`
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 600px;
-  height: 300px; 
+  gap: 20px;
+  width: ${({ vip }) => vip ? '650px' : '600px'};
+  height: ${({ vip }) => vip ? '550px' : '500px'};
   padding: 20px;
-  background-color: blue;
-  font-size: 24px; 
- `;
+  background-color: ${({ vip }) => vip ? 'rgb(25, 23, 96)' : 'rgb(67, 65, 134)'};
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+`;
 
-  export const TitleCard = styled.h2`
-  color: #53E4F5;
-  font-size: 50px;
-  `
+export const Title = styled.h2`
+  font-size: 40px;
+`;
 
+export const Description = styled.div``;
 
- export const AvatarImg = styled.img` 
-   width: 100px;
- ` 
-
-interface RegularCardInfoStyledProps {
-    primary?: boolean
- }
-
- export const RegularCardStyle = styled.div<RegularCardInfoStyledProps>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
-  height: 300px; 
-  padding: 20px;
-  background-color: green;
-  font-size: 24px; 
- `;
-
- 
-
-   
-
-   
