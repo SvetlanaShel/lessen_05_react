@@ -1,5 +1,5 @@
- homework07
-import './styles.css';
+import { MainButton} from './styles'; 
+//import './styles.css';
 import { ButtonProps } from './types';
 
 // interface ButtonProps {
@@ -10,23 +10,18 @@ import { ButtonProps } from './types';
 //   type?: 'submit' | 'button' | 'reset'
 // }
 
-function Button({ name, onClick, disabled = false, type = 'submit' }: ButtonProps) {
+function Button({ name, onClick, disabled = false, type = 'submit', danger }: ButtonProps) {
   return (
-    <button
+    <MainButton
       className="main-button"
       onClick={onClick}
       disabled={disabled}
       type={type}
+      danger={danger}
     >
-      {name}
-    </button>
+    {name}
+    </MainButton>
   )
-
-import './style.css';
-
-function Button () { 
-    return <button className="main-button">Send</button>
-main
 }
 
 export default Button

@@ -17,7 +17,8 @@
 //Consultations imports
 //import Consultation04 from "./consultations/Consultation04/Consultation04"
  //import Homework09 from "./lessons/Lesson06/homeworks/Homework09/Homework09"
-import Lesson10Container from "./lessons/Lesson10/Lesson10";
+//import Lesson10Container from "./lessons/Lesson10/Lesson10";
+ import Homework10  from "./homeworks/Homework10/Homework10";
 
 function App() {
 
@@ -34,7 +35,8 @@ function App() {
       {/*<Homework08/>*/}
        {/*<Lesson09 />*/}
        {/*<Homework09 />*/}
-       <Lesson10Container/>
+       {/*<Lesson10Container/>*/}
+       <Homework10/>
     </>
   )
 };
