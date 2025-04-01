@@ -1,5 +1,4 @@
 import { MainButton} from './styles'; 
-//import './styles.css';
 import { ButtonProps } from './types';
 
 // interface ButtonProps {
@@ -13,7 +12,6 @@ import { ButtonProps } from './types';
 function Button({ name, onClick, disabled = false, type = 'submit', danger }: ButtonProps) {
   return (
     <MainButton
-      className="main-button"
       onClick={onClick}
       disabled={disabled}
       type={type}
