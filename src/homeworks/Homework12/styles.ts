@@ -29,3 +29,8 @@ export const Error = styled.div`
  color: red;
  font-weight: bold;
 `
+export const Title = styled.div`
+ font-size: 40px;
+  color: rgb(13, 37, 39);
+  font-weight: bold;
+`

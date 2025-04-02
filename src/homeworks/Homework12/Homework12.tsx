@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import { Homework12Container, FactWrapper, Error } from "./styles";
-import Button from "../../components/Button/Button";
+import { Homework12Container, Title, FactWrapper, Error } from "./styles";
+import  Button from "../../components/Button/Button";
 import Spinner from "../../components/Spinner/Spinner";
 
 
@@ -40,7 +40,7 @@ function Homework12 () {
 
     return (
        <Homework12Container>
-        <h1>Cat Fact</h1>
+        <Title>Cat Fact</Title>
         <Button name='GET MORE FACTS' onClick={getFact} disabled={isLoading} />
         <FactWrapper>{isLoading ? <Spinner /> : fact}</FactWrapper>
         <Error>{error}</Error>
