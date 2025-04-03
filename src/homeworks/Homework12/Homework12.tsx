@@ -20,8 +20,7 @@ function Homework12 () {
 
         try {
            setIsLoading(true);
-           const response = await axios.get(FACT_URL)
-           console.log(response.data);
+           const response = await axios.get(FACT_URL);
            setFact(response.data.fact);
         }
 
@@ -36,7 +35,7 @@ function Homework12 () {
         }
     }
 
-    useEffect(() => { getFact() },[])
+    useEffect(() => { getFact() }, []);
 
     return (
        <Homework12Container>
