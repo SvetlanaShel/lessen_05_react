@@ -1,5 +1,5 @@
-
 export interface EmployeeFormValues {
     fullName: string,
-    age: number
+    age: number,
+    rulesOfUse: boolean
 }
