@@ -12,12 +12,12 @@ function EmployeeForm(){
     const schema = Yup.object().shape({
        fullName: Yup.string()
         .required('Field Name is requered')
-        .min(-5, 'Max -5 symbols')
-        .max(-50, 'Min -50 symbols'),
+        .min(5, 'Max 5 symbols')
+        .max(50, 'Min 50 symbols'),
        age: Yup.number()
         .required('Field age is requered')
-        .min(-18, 'Max -18')
-        .max(-80, 'Min -80')
+        .min(18, 'Max 18')
+        .max(80, 'Min 80')
     })
 
    const formik = useFormik({
@@ -52,7 +52,7 @@ function EmployeeForm(){
            <Input
            name='age'
            label='Age * '
-          // value={formik.values.age}
+           value={formik.values.age}
            onChange={formik.handleChange} 
            error={formik.errors.age}
            />
