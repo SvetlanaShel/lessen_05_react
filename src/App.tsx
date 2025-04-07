@@ -23,9 +23,10 @@
  //import Homework11 from "./homeworks/Homework11/Homework11";
  //import Lesson12 from "./lessons/Lesson12/Lesson12";
  //import Homework12 from "./homeworks/Homework12/Homework12";
- import Lesson13 from "./lessons/Lesson13/Lesson13";
+ //import Lesson13 from "./lessons/Lesson13/Lesson13";
  //import Lesson14 from "./lessons/Lesson14/Lesson14";
  //import Homework14 from "./homeworks/Homework14/Homework14";
+ import Homework15 from "./homeworks/Homework15/Homework15";
 
 function App() {
 
@@ -48,9 +49,10 @@ function App() {
        {/*<Homework11 />*/}
        {/*<Lesson12 />*/}
        {/*<Homework12 />*/}
-       <Lesson13 />
+       {/*<Lesson13 />*/}
        {/*<Lesson14 />*/}
        {/*<Homework14 />*/}
+       <Homework15 />
     </>
   )
 };
