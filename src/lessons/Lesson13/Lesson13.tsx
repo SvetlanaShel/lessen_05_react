@@ -25,7 +25,6 @@ function Lesson13 () {
         setError(undefined);
 
         try {
-            setIsLoading(true);
             const response = await axios.get(IMAGE_URL);
             setImage (response.data.message);
     }
