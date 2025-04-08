@@ -32,6 +32,7 @@
  //import Lesson13 from "./lessons/Lesson13/Lesson13";
  //import Lesson14 from "./lessons/Lesson14/Lesson14";
  //import Homework14 from "./homeworks/Homework14/Homework14";
+ import Homework15 from "./homeworks/Homework15/Homework15";
 
 function App() {
 
@@ -51,6 +52,28 @@ function App() {
         </Routes>
       </Layout>
     </BrowserRouter>
+      {/* <Task6 /> */}
+      {/* <Lesson06 /> */}
+      {/* <Homework06 /> */}
+      {/* <Lesson07 /> */}
+      {/* <Homework07/> */}
+      {/* <Lesson08/> */}
+      {/*<Consultation04 />*/}
+      {/*<Homework08/>*/}
+       {/*<Lesson09 />*/}
+       {/*<Homework09 />*/}
+       {/*<Lesson10Container/>*/}
+       {/*<Homework10/>*/}
+       {/*<Lesson11 />*/}
+       {/*<Homework11 />*/}
+       {/*<Lesson12 />*/}
+       {/*<Homework12 />*/}
+       {/*<Lesson13 />*/}
+       {/*<Lesson14 />*/}
+       {/*<Homework14 />*/}
+       <Homework15 />
+    </>
+
   )
 }
 
