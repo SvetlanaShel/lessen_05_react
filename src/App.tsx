@@ -1,7 +1,8 @@
  import  Layout from "./components/Layout/Layout";
- import { BrowserRouter, Routes, Route }  from 'react-router-dom';
+ import { BrowserRouter, Routes, Route } from 'react-router-dom';
  import Home from "./pages/Home/Home"
  import About from "./pages/About/About"
+ import Course from "./pages/Course/Course";
 
  import GlobalStyles from "./styles/GlobalStyles";
 
@@ -39,7 +40,6 @@ function App() {
     // которая позволяет использовать маршрутизацию
     <BrowserRouter>
       <GlobalStyles />
-       {/*<Homework14 />*/}
        <Layout>
        {/* Routes - обертка, которая собирает все маршруты приложения */}
        <Routes>
@@ -47,6 +47,7 @@ function App() {
           который должен быть вызван, если выполнен переход по этому маршруту */}
           <Route path='/' element={<Home />}/>
           <Route path='/about' element={<About />}/>
+          <Route path='/course' element={<Course />}/>
         </Routes>
       </Layout>
     </BrowserRouter>
