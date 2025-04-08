@@ -1,10 +1,11 @@
 import styled from "@emotion/styled";
 
-export const EmployeeFormComponent = styled.form`
+export const Homework15Container = styled.form`
  display: flex;
  flex-direction: column;
- gap: 10px;
- min-width: 600px;
+ align-items: center;
+ gap: 40px;
+ width: 500px;
  padding: 40px;
  background-color: white;
  border: 2px solid black;

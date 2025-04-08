@@ -10,17 +10,19 @@ export const Lesson13Container = styled.div`
  background-color: rgb(208, 207, 195);
 `;
 
-export const ImageWrapper = styled.div`
+export const ImagesWrapper = styled.div`
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
- width: 600px;
- height: 400px;
+ min-width: 500px;
+ /* для добавления scroll используем набор свойств
+ постоянна высота (height) и свойство  overflow: auto; */
+ height: 700px;
+ overflow: auto;
  padding: 30px;
  background-color: white;
  border-radius: 10px;
- font-size: 24px;
  color:rgb(45, 88, 189);
  font-weight: bold;
 `
@@ -29,7 +31,14 @@ export const Error = styled.div`
  color: red;
  font-weight: bold;
  `
- export const Img = styled.img`
+
+ export const ButtonContainer = styled.div`
+  display: flex;
+ gap: 20px;
+ width: 500px;
+ `
+
+ export const Image = styled.img`
  width: 600px;
  height: 400px;
  margin: 10px 0;
