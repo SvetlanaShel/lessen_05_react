@@ -1,9 +1,15 @@
  import  Layout from "./components/Layout/Layout";
  import { BrowserRouter, Routes, Route }  from 'react-router-dom';
+
  import Home from "./pages/Home/Home"
  import About from "./pages/About/About"
-
+ import Course from "./pages/Course/Course";
+ import Users from "./pages/Users/components/Users";
+ import Designer from "./pages/Users/components/Designer/Designer";
+ import Manager from "./pages/Users/components/Manager/Manager";
  import GlobalStyles from "./styles/GlobalStyles";
+ import PageNotFound from './pages/PageNotFound/PageNotFound'
+
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -47,6 +53,14 @@ function App() {
           который должен быть вызван, если выполнен переход по этому маршруту */}
           <Route path='/' element={<Home />}/>
           <Route path='/about' element={<About />}/>
+          <Route path='/course' element={<Course />}/>
+          <Route path='/users' element={<Users />}/>
+          <Route path='/users/designer' element={<Designer />}/>
+          <Route path='/users/manager' element={<Manager />}/>
+          {/* path='*' - специальный маршрут, который вызовет переданный компонент в
+          том случае, если в маршрутах выше не будет найдено того маршрута,
+          к которому обращается пользователь */}
+          <Route path='*' element={<PageNotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>
