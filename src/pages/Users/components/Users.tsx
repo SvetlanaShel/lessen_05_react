@@ -12,6 +12,7 @@ function Users () {
    */}
             <StyledLink to='manager'>Manager</StyledLink>
             <StyledLink to='/users/designer'>Designer</StyledLink>
+
         </UsersWrapper>
     )
 }

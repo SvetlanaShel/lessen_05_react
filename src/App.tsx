@@ -8,7 +8,11 @@
  import Designer from "./pages/Users/components/Designer/Designer";
  import Manager from "./pages/Users/components/Manager/Manager";
  import GlobalStyles from "./styles/GlobalStyles";
- import PageNotFound from './pages/PageNotFound/PageNotFound'
+ import PageNotFound from './pages/PageNotFound/PageNotFound';
+ import Clients from "./pages/Clients/Clients";
+ import AccentureCompany from "./pages/Clients/components/AccentureCompany/AccentureCompany";
+ import SynnexCompany from "./pages/Clients/components/AccentureCompany/SynnexCompany/SynnexCompany";
+ import CiscoCompany from "./pages/Clients/components/CiscoCompany/CiscoCompany";
 
 
 //Lessons imports
@@ -55,8 +59,13 @@ function App() {
           <Route path='/about' element={<About />}/>
           <Route path='/course' element={<Course />}/>
           <Route path='/users' element={<Users />}/>
+          <Route path='/clients' element={<Clients />}/>
           <Route path='/users/designer' element={<Designer />}/>
           <Route path='/users/manager' element={<Manager />}/>
+          <Route path='/clients/accentureCompany' element={<AccentureCompany />}/>
+          <Route path='/clients/synnexCompany' element={<SynnexCompany />}/>
+          <Route path='/clients/ciscoCompany' element={<CiscoCompany />}/>
+          
           {/* path='*' - специальный маршрут, который вызовет переданный компонент в
           том случае, если в маршрутах выше не будет найдено того маршрута,
           к которому обращается пользователь */}
