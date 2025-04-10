@@ -1,4 +1,7 @@
+
 import styled from '@emotion/styled';
+import styled from "@emotion/styled";
+
 export const CourseWrapper = styled.div`
  display: flex;
  flex-direction: column;
@@ -8,6 +11,9 @@ export const CourseWrapper = styled.div`
  flex: 1;
  padding: 60px;
  background-color: rgb(218, 167, 226);
+ flex: 1;
+ padding: 60px;
+ background-color: rgb(134, 227, 187);
 `
 export const Title = styled.div`
  font-size: 40px;

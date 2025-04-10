@@ -31,6 +31,23 @@ function Layout({ children }: LayoutProps) {
       <StyledNavLink key={v4()} to={navLink.to} style={
         ({ isActive }) => ({ textDecoration: isActive ? 'underline' : 'none' })
       }>{navLink.linkName}</StyledNavLink>
+      <LayoutComponent>
+        <Header>
+          <LogoText>Company name</LogoText>
+          <Nav>
+            {/* NavLink - компонент библиотеки, который добавляет ссылку на 
+            страницу по маршруту через prop to */}
+            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/about'>About</NavLink>
+            <NavLink to='/course'>Course</NavLink>
+          </Nav>
+        </Header>
+        <Main>{children}</Main>
+        <Footer>
+          <LogoText>Company name</LogoText>
+        </Footer>
+      </LayoutComponent>
+
     )
   })
 
