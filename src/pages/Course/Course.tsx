@@ -1,16 +1,17 @@
 
-import { CourseWrapper, Title,  } from "./styles";
+import { v4 } from "uuid"
+import { CourseWrapper, Title, ListItem } from "./styles"
+import { lessonsData } from "./data"
 
-function Course () {
-    return (
-        <CourseWrapper>
-            <Title>React Lessons</Title>
-             <li>JSX</li>
-             <li>Styling Components</li>
-             <li>Object Types</li>
-             <li>Type Script</li>
-        </CourseWrapper>
-    )
-}
-
-export default Course;
+function Course (){
+    const lessons = lessonsData.map((lesson: string)=>{
+     return <ListItem key={v4()}>{lesson}</ListItem>
+    })
+     return (
+      <CourseWrapper>
+       <Title>React Lessons</Title>
+       {lessons}
+      </CourseWrapper>
+     )
+    }
+    export default Course

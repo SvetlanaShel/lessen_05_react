@@ -1,8 +1,6 @@
-
 import styled from '@emotion/styled';
-import styled from "@emotion/styled";
 
-export const CourseWrapper = styled.div`
+export const AccentureCompanyWrapper = styled.div`
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -10,18 +8,18 @@ export const CourseWrapper = styled.div`
  gap: 16px;
  flex: 1;
  padding: 60px;
- background-color: rgb(218, 167, 226);
- flex: 1;
- padding: 60px;
- background-color: rgb(134, 227, 187);
+ background-color: rgb(161, 224, 154);
 `
-export const Title = styled.div`
+export const JobTitle = styled.div`
  font-size: 40px;
  font-weight: bold;
- color: #390A21
+ color: #0b6a27;
 `
 export const ListItem = styled.div`
  font-size: 28px;
  font-weight: bold;
  color: #5A1637
+`
+export const Image = styled.img`
+ width: 400px;
 `

@@ -1,10 +1,19 @@
  import  Layout from "./components/Layout/Layout";
- import { BrowserRouter, Routes, Route } from 'react-router-dom';
+ import { BrowserRouter, Routes, Route }  from 'react-router-dom';
+
  import Home from "./pages/Home/Home"
  import About from "./pages/About/About"
  import Course from "./pages/Course/Course";
-
+ import Users from "./pages/Users/components/Users";
+ import Designer from "./pages/Users/components/Designer/Designer";
+ import Manager from "./pages/Users/components/Manager/Manager";
  import GlobalStyles from "./styles/GlobalStyles";
+ import PageNotFound from './pages/PageNotFound/PageNotFound';
+ import Clients from "./pages/Clients/Clients";
+ import AccentureCompany from "./pages/Clients/components/AccentureCompany/AccentureCompany";
+ import SynnexCompany from "./pages/Clients/components/AccentureCompany/SynnexCompany/SynnexCompany";
+ import CiscoCompany from "./pages/Clients/components/CiscoCompany/CiscoCompany";
+
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -32,7 +41,7 @@
  //import Lesson13 from "./lessons/Lesson13/Lesson13";
  //import Lesson14 from "./lessons/Lesson14/Lesson14";
  //import Homework14 from "./homeworks/Homework14/Homework14";
- import Homework15 from "./homeworks/Homework15/Homework15";
+ //import Homework15 from "./homeworks/Homework15/Homework15";
 
 function App() {
 
@@ -49,6 +58,19 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/course' element={<Course />}/>
+          <Route path='/users' element={<Users />}/>
+          <Route path='/clients' element={<Clients />}/>
+          <Route path='/users/designer' element={<Designer />}/>
+          <Route path='/users/manager' element={<Manager />}/>
+          <Route path='/clients/accentureCompany' element={<AccentureCompany />}/>
+          <Route path='/clients/synnexCompany' element={<SynnexCompany />}/>
+          <Route path='/clients/ciscoCompany' element={<CiscoCompany />}/>
+          
+          {/* path='*' - специальный маршрут, который вызовет переданный компонент в
+          том случае, если в маршрутах выше не будет найдено того маршрута,
+          к которому обращается пользователь */}
+          <Route path='*' element={<PageNotFound />} />
+
         </Routes>
       </Layout>
     </BrowserRouter>
@@ -71,7 +93,7 @@ function App() {
        {/*<Lesson13 />*/}
        {/*<Lesson14 />*/}
        {/*<Homework14 />*/}
-       <Homework15 />
+        {/*<Homework15 />>*/}
     </>
 
   )
