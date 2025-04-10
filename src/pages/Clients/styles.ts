@@ -8,17 +8,17 @@ export const ClientsWrapper = styled.div`
   gap: 16px;
   flex: 1;
   padding: 60px;
-  background-color: rgb(239, 232, 239);
+  background-color: rgb(200, 150, 74);
 `
 
 export const Title = styled.div`
  font-size: 40px;
  font-weight: bold;
- color: #07082e;
+ color: #871b5d;
 `
 
 export const StyledLink = styled(Link)`
  font-size: 30px;
  font-weight: bold;
- color: #161a92;
+ color: #101246;
 `

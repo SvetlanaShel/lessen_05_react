@@ -31,3 +31,14 @@ export const ListItem = styled.div`
  font-weight: bold;
  color: #5A1637
 `
+export const Description = styled.div`
+font-size: 40px;
+ font-weight: bold;
+ color: #171e50;
+`
+
+export const CompanyInfo = styled.div`
+font-size: 40px;
+ font-weight: bold;
+ color: #25347b;
+` 
